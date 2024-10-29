@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant Izah</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+    
+    .nav{
+            width: 100%;
+            height: 80px;
+            background: #ffd700;
+            color: #000000;
+            text-align: center;
+            font-weight: 800;
+            display: flex;
+            font-size: 2rem;
+          position: sticky;
+          top: 0%;
+          z-index: 5;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+        }
+        .icon{
+            margin-right: 20px;
+
+        }
+        .icon i{
+            color:rgb(24, 24, 62);
+            font-size: 3rem;
+        }
+        .logo{
+            height: 120px;
+            width: 125px;
+            position: fixed;
+            top: 38px;
+            padding: 1px;
+            border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            left:30px;
+        }
+        .image{
+            background-image: url('./slide1.png ');
+         height: 755px;
+         width: 100%;
+        
+       
+       
+    
+          animation: move 25s infinite;
+        }
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        button{
+            padding: 20px 40px;
+            background-color: black;
+            margin-right: 30px;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            
+        }
+        h4{
+            color:red;
+        }
+        @media screen and (max-width:700px) {
+            .image{
+                display: none;
+            }
+            
+        }
+        
+        @keyframes move{
+            25%{
+                background-image: url(./wallhaven-p869pm_2560x1080.png);
+            }
+            50%{
+ background-image:url(./wallhaven-8o3kgk_2560x1080.png);
+
+            }
+            75%{
+                background-image: url(./wallhaven-nkl99m_2560x1080.png);
+
+
+}
+100%{
+    background-image: url('./wallhaven-xl99yv_2560x1080.png');
+}
+}
+.imageinner h1{
+            font-size: 70px;
+            color: white;
+        }
+        .imageinner p{
+            font-size: 30px;
+            color: yellow;
+        }
+        .imageinner{
+
+           padding-top: 20%;
+           padding-left: 10%;
+           padding-bottom: 30px;
+        }
+        .imagelowerinner{
+            float: left;
+            width:100%;
+            padding-left: 70px;
+            background:palegoldenrod;
+            padding-top: 150px;
+
+          
+        }
+
+        .one{
+            font-size: 1.5rem;
+            float: left;
+            height: 400px;
+            border: 1px solid white;
+          
+            width: 700px;
+            margin: 20px;
+            margin-left: 40px;
+             border-radius: 10px;
+        }
+.one h3,p{
+    margin:10px  0 0 30px;
+}
+.one:hover{
+    background: #000;
+    color: red;
+    border: 1px solid black;
+    transition: .8s;
+}
+.two{
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-right: 2%;
+    text-align: center;
+
+}
+.all{
+    background-image: url(https://th.bing.com/th/id/OIP.Z0rmX5K_dcmBT8rU_44qFQHaEo?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    
+}
+.all h1{
+    color: white;
+
+}
+.small{
+
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+   display: flex;
+    width: 100%;
+    padding-left: 6%;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.small img{
+    border-radius: 20px 20px 0 0;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color:rgb(49, 49, 108);
+    border-top: .5px solid white;
+}
+.poster{
+    background-image: url(https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?cs=srgb&dl=beef-bread-buns-1633578.jpg&fm=jpg);
+    height: 1000px;
+    width: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #ffd700;
+   
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 120px;
+}
+.gridouter{
+    padding-top: 100px;
+    padding: 50px;
+   background-image: url(https://thetravelingca.com/wp-content/uploads/2020/07/2230515359_cc3f704ef1_k-1.jpg);
+}
+.three{
+    height: 90px;
+   
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow:5px gainsboro;
+    background: rgba(255, 239, 213, 0.348);
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.three:hover{
+    background: #000;
+    color: red;
+    transition: .8s;
+}
+.two h2{
+    padding-top: 10px;
+    color: red;
+}
+.two p{
+    color: rgb(0, 128, 128);
+    padding-right: 10px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.two:hover{
+    background-color: #000000;
+    color: red;
+    transition: .8s;
+   transform: scale(1.3);
+}
+#black:hover{
+    background: yellow;
+    color: red;
+    transition: .8s;
+}
+#black{
+    background: #000;
+    color: yellow;
+}
+.footpanel1{
+    background-color: #37475a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    color: white;
+}
+.footpanel2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f2832;
+    color: rgb(237, 231, 231);
+    padding: 20px;
+    font-size: 0.85rem;
+}
+.footpanel2 .lis{
+    margin-top: 50px;
+    
+}
+.lis ul{
+    list-style-type: none;
+    line-height: 30px;
+}
+.lis ul li:first-child{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+.footpanel3{
+    height: 80px;
+    background-color: #1f2832;
+    border-top: .5px solid rgb(168, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.four{
+    height: 30px;
+    width: 150px;
+    border: .3px solid rgb(149, 146, 146);
+    margin-left: 30px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+.four i{
+    margin-right: 10px;
+}
+/* pannnel fourrrrrrrrrr */
+.footpanel4{
+    display: grid;
+    grid-template-columns: repeat(6,1fr)  ;
+    padding: 50px 200px;
+     background:#131a22;
+}
+.footpanel4 ul li{
+    font-size: .7rem;
+    color: rgb(215, 208, 208);
+  
+
+}
+.footpanel4 ul{
+    line-height: 20px;
+}
+.footpanel4 ul li:first-child{
+    font-size: 1rem;
+    margin: 0;
+}
+/* PANELLLLL FIVE */
+.footpanel5{
+    text-align: center;
+    background:#131a22;
+    color: white;
+    font-size: .8rem;
+    padding: 30px;
+}
+.footpanel5 ul li{
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+}
+.footpanel5 ul{
+  padding-bottom: 5px;
+}
+.info{
+    margin: 0 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#input{
+    padding: 20px;
+    width: 590px;
+    border: none;
+    background:rgba(227, 225, 225, 0.708);
+}
+#input:focus{
+    border: none;
+}
+.i{
+    background:white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background:rgba(227, 225, 225, 0.708);
+}
+.searching{
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background: white;
+    width:45%;
+    background:rgba(227, 225, 225, 0.708);
+}
+    </style>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="top">
+    <div class="nav">
+        <div></div>
+         <div class="logo"><img src="./mainlogo-removebg-preview.png" height="200px" alt=""></div>
+              <div><h4>Resturant Izah</h4>
+                <h5 >         Where Flavour Unite</h5></div>
+      <div class="button"><button>sign up</button>  <div class="icon"><a href=""><i class="fa-solid fa-bars"></i></a></div></div>
+  
+  </div> 
+
+  <!-- imagessssssss -->
+  <div class="image">
+    <div class="imageinner"><h1>RESTURANT </h1>
+     <h1>IZAH</h1>
+     <p>The fine quality dishes from the top chiefs in the world,<br> As per the tag line our slogan is combination of world class food <br>cooks as per your order</p> 
+     <div class="searching"><div class="search"> <input type="text" name="" placeholder="search for foods" id="input"></div>
+     <div class="i"><i class="fa-solid fa-magnifying-glass fa-lg"></i></div></div>
+     </div>
+
+</div>
+<!-- mainnnn -->
+<div class="imagelowerinner">
+    <h1 style="margin-left: 40%; margin-bottom: 50px;">BOOKINGS</h1>
+    <div class="one"><img style="border-radius: 10px 10px 0 0;" src="./wallhaven-8o3kgk_2560x1080.png" height="300px" width="100%" alt=""><h3>ORDER ONLINE</h3>
+    <p>stay home delivers to your doorstep</p></div>
+    
+    <div class="one"> <img style="border-radius: 10px 10px 0 0;" src="https://th.bing.com/th/id/OIP.O_1dGY-fbliagM6_Z9tmpwHaE8?rs=1&pid=ImgDetMain" height="300px" width="100%" alt=""><h3>BOOK A TABLE</h3> <p>enjoy todays dinners with us</p></div>
+    <button id="black" style="margin-left: 40%;margin-top:80px ; margin-bottom: 50px;">SEE MORE</button>
+    <br>
+
+    <hr>
+    <br>
+</div>
+<!--poster -->
+<div class="poster" >
+    <div><h1>ONAM OFFERS</h1>
+        <P>50% ON BURGERS</P>
+        <h1>HURRY <br> OFFERS CLOSES SOON
+        </h1></div>
+
+ </div>
+<!-- productssssssssss -->
+ <div  class="all">
+    <h1 style="margin-left: 45%;  padding-top: 20px; color: red;">DISHES</h1>
+    <div class="small">
+        <br>
+                 <div class="two"> <img src="https://deliciouslittlebites.com/wp-content/uploads/2017/02/Vegetable-Stir-Fry-Recipe-Image-10.jpg" width="100%"
+                  height="80%" alt="">
+                <h2>VEG</h2>
+                <p style="font-size: 10px;">pure vegetaraian <br>from seperates cheifs</p></div>
+                  <div class="two"> <img src="https://i.pinimg.com/736x/20/92/48/2092483fde63dc2c9e3f2a0038c8af1f.jpg" width="100%"
+                  height="80%" alt="">
+                <h2>NON-VEG</h2>
+                 <p>All varity of chickens <br> are available here.... </p></div>
+                  <div class="two"> <img src="https://th.bing.com/th/id/R.36f377709f52252ee173124ad6b4a053?rik=QhydLeK4Yu0ROQ&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1076396%2fimages%2fo-EASY-ITALIAN-RECIPES-facebook.jpg&ehk=x008jPJLKGHjHhUtcPKPHhvb%2fUSxbkdtogQYPLJspSw%3d&risl=&pid=ImgRaw&r=0" width="100%"
+                     height="80%" alt=""><h2>ITALIAN</h2><p>Italian foods are made <br>
+                    better than italians.</p></div>
+                   <div class="two"> <img src="https://th.bing.com/th/id/OIP.atChrQ3askb_AIYl-5YtYwAAAA?rs=1&pid=ImgDetMain" width="100%"
+                    height="80%" alt=""> <h2>KOREAN</h2><p>Latest trending korean <br>dishes available...</p></div>
+                </div>
+ </div>
+<!--locationssssss  -->
+<div class="gridouter">
+    <h1 style="color:rgb(255, 25, 0);font-size: 40px;padding-left: 30%; padding-top: 20px;">POPULAR LOACATIONS IN KOCHI</h1>
+    <div class="grid">
+        <div class="three">
+            <h3>KAKKANAD</h3>
+           
+        </div>
+        <div class="three">
+            <h3>EDAPALLY</h3>
+          >
+        </div>
+        <div class="three">
+            <h3>FORT KOCHI</h3>
+        
+        </div>
+        <div class="three">
+            <h3>MG ROAD</h3>
+         
+        </div>
+        <div class="three">
+            <h3>VYTILLA</h3>
+        
+        </div>
+        <div class="three">
+            <h3>PERIMASERY</h3>
+            
+        </div>
+        <div class="three"> <h3>PALARIVATTAM</h3>
+           </div>
+        <div class="three">
+            <h3>CAFE CORNER</h3>
+        
+        </div>
+        <div style="display: flex;justify-content: center;align-items: center;" class="three">
+            <h2>see more</h2>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+       <!-- footerrr -->
+       <footer>
+        <div class="footpanel1">
+           <a style="text-decoration: none;color: white;transition: 5s;" href="#top"> Back to Top</a>
+        </div>
+        <div class="footpanel2">
+            <div class="lis">
+                <ul>
+                    <li>Get to Know Us</li>
+                    <li>Carrers</li>
+                    <li>Blog</li>
+                    <li>About Us</li>
+                    <li> Relation</li>
+                    <li>Amazon Services</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                    <li>BE A PARTNER</li>
+                    <li>Sell products</li>
+                    <li>sell spixes</li>
+                     <li>Become a affliate</li>
+                     <li>Advertise your products</li>
+                     <li>Self-publish with us</li>
+                     <li>Host on hub</li>
+                     <li>See more make money</li>
+                     
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+             <li>Payment products</li>
+             <li>Cards</li>
+             <li>Shop with points</li>
+             <li>Relod your balance</li>
+             <li>Cash</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+             <li>products</li>
+             <li>breakfast</li>
+             <li>lunch</li>
+             <li>dinner</li>
+             <li>deserts</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+            <li>Let Us Help you</li>
+            <li>Amazon &covid</li>
+            <li>Your Account</li>
+            <li>Your Orders</li>
+            <li>Shipping Rates
+            </li>>
+            <li>Manage Your</li>
+            <li>Amazon Assistent</li>
+            <li>Help</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footpanel3">
+          
+          <div class="one four ">
+            <i class="fa-solid fa-earth-americas"></i>
+            English
+          </div>
+           <div class="tow four">
+            <i class="fa-solid fa-dollar-sign"></i>
+            USD-U.S.Dollar
+           </div>
+           <div class="three four">
+            <img src="./—Pngtree—cartoons american flag_4283200.png" width="25px"  alt="">
+            United States
+           </div>     
+           <div class="info"><i class="fa-brands fa-instagram fa-2x" style="color: white;"></i></div>
+           <div class="info"><i class="fa-brands fa-facebook fa-2x" style="color: white;"></i></div>
+           <div class="info"><i class="fa-brands fa-twitter fa-2x"  style="color: white;"></i></div> 
+        </div>
+        <div class="footpanel4">
+            <div class="lis">
+                <ul>
+             <li>fast deliver</li>
+             <li>Stream millions</li>
+             <li>taste</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                   <li>izah
+                   </li>
+                   <li>Advertising</li>
+                   <li>find attract,</li>
+                   <li>aand</li>
+                   <li>engage</li>
+                   <li>customers</li>
+                     
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+            <li>Gpm</li>
+            <li>score</li>
+            <li>on food</li>
+            <li>brands</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+        <li>menus</li>
+        <li>bookslets</li>
+        <li>brochure</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                 <li>ACK</li>
+                 <li>factory</li>
+                 <li>manufacutring</li>
+                 <li>resturants</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                   <li>Sell on izah</li>
+                   <li>start a selling</li>
+                   <li>account</li>
+                     
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                   <li>Availability</li>
+                   <li>local</li>
+                   <li>national</li>
+                   <li>international</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+            <li>taste</li>
+            <li>talian</li>
+            <li>and</li>
+            <li>keroean</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                 <li>web service</li>
+                 <li>hostiong</li>
+                 <li>servesw</li>
+                 <li>mainpulation</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                    <li>Tree</li>
+                    <li>branch</li>
+                    <li>shopping</li>
+                    <li>cart</li>
+                    <li>sell</li>
+                     
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                <li>zomato</li>
+                <li>swiggy</li>
+                <li>mart</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+            <li>Countries</li>
+            <li>india</li>
+            <li>pakisthan</li>
+            <li>american</li>
+            <li>antartica</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                    <li>delivery</li>
+                    <li>fast</li>
+                    <li>quick</li>
+                    <li>next minute</li>
+                </ul>
+            </div>
+            <div class="lis">
+                <ul>
+                   <li>products</li>
+                   <li>breaks</li>
+                   <li>dinns</li>
+                   <li>tea time</li>
+                   <li>cakes</li>
+                   <li>bakes</li>
+                     
+                </ul>
+            </div>
+           
+    
+        </div>
+        <div class="footpanel5">
+            <ul>
+                <li>Contions to use</li>
+                <li>privacy concens</li>
+                <li>customer health data disclosure</li>
+                <li>Your Ads Privacy Choices []
+                </li>
+            </ul>
+            <p> &#169; 2000-2002,amazon.in,icl or its affliates</p>
+           
+        </div>
+    </footer>
+</body>
+</html>

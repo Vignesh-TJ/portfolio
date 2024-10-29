@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./style.css">
+     <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/portfolio-2432090-2058964.png?f=webp&w=256">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Baloo+Chettan+2:wght@400..800&family=Grey+Qo&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>  *{
+        
+        
+        font-family: "Anek Devanagari", sans-serif;
+
+    }
+    #container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  
+}
+nav{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#logo{
+    width: 130px;
+}
+.listitem{
+    display: inline;
+    margin: 10px 20px;
+    list-style-type: none;
+    
+}
+.listitem a{
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+}
+.listitem a:hover{
+    color: red;
+}
+
+.tittle{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.tittle h1{
+    font-size: 60px;
+    font-weight: 800;
+    margin-inline-start: 0px;
+
+   
+}
+.images{
+    width: 45%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    height: 85%;
+
+}
+.images:hover #shape{
+    bottom:70px;
+
+
+}
+.images:hover #girl{
+    left: 40%;
+}
+
+
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+   transform: translatex(-50%);
+   transition: bottom 1s,left 2s;
+
+}
+.download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-top:15px;
+}
+.tittle p{
+    margin-bottom: 30px;
+}
+
+
+/* hey there iam creationg next part */
+.intro{
+text-align: center;
+
+}
+.intro p{
+    color: green;
+    font-size: 20px;
+}
+.main{
+    margin-top: 300px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.para{
+  
+   
+    padding: 10px;
+ 
+}
+.content{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+.info {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+.photo>img{
+    width: 80%;
+}
+.para{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: justify;
+}
+.main{
+ 
+   
+}
+
+.list{
+    margin-left: 10px;
+}
+.intro h1,p{
+    margin: 0px;
+}
+.information{
+    display: grid;
+    row-gap:1rem;
+    margin-top: 20px;
+}
+.information i{
+    margin-right: 1rem;
+}
+.intro p{
+    font-size: 30px;
+}
+.skilll{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 8% 8% 0 8%;
+}
+.section{
+    margin-top: 50px;
+}
+.skillright img{
+   width: 90%;
+}
+.percentage{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 10px;
+}
+.basebar{
+    width: 100%;
+    background: #000;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+
+}
+.basebar span{
+    font-size: 30px;
+    font-weight: 800;
+}
+#html{
+    background: orange;
+    width: 95%;
+}
+#css{
+    background: orange;
+    width: 88%;
+
+}
+#js{
+    background-color: orange;
+    width: 89%;
+}
+#react{
+    background:orange;
+    width: 85%;
+}
+.percentage h3{
+    margin: 0px;
+}
+.contacticons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.contacticons i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.contacticons a{
+    color: black;
+}
+.contacticonss,#arrow{
+    width: 50px;
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    border-radius: 50%;
+    padding-top: 5px;
+   
+}
+.contacticonss:hover{
+    background-image: linear-gradient(to bottom right,yellow,rgb(38, 255, 0));
+    
+}
+.contacticonss a:hover{
+    color: white;
+    animation: shake .75s;
+    
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+
+    }
+}
+footer{
+    margin: 20px 0px;
+}
+.conclusion{
+    text-align: center;
+    font-weight: 700;
+}
+#arrow{
+    background-image: linear-gradient(to bottom right,yellow,rgb(38, 255, 0));
+    float: right;
+    columns: black;
+
+}
+#arrow a{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}</style>
+  
+
+     
+</head>
+<body id="up" >
+ <nav>
+    <img id="logo" src="./images/two.jpg" alt="">
+    <ul>
+        <li class="listitem"><a href="#up">HOME</a></li>
+        <li class="listitem"><a href="#about">ABOUT</a></li>
+        <li class="listitem"><a href="#skill">SKILL</a></li>
+        <li class="listitem"><a href="#contact">CONTACT</a></li>
+    </ul>
+ </nav>
+ <!-- home section -->
+  <section >
+    <div class="tittle">
+        <h1>I'm Ana <span> Steel</span>
+           </h1>
+        <p>this is my officail portfolio website to describe all <br> details and work experience in web development </p>
+        <a class="download" download="true" href="./images/RESUME (1).pdf">DOWNLOAD CV</a>
+    </div>
+    <DIV class="images">
+        <img id="shape" class="imagegroup" src="./images/five-removebg-preview.png" alt="">
+        <img id="girl" class="imagegroup" src="./images/three-removebg-preview (1).png" alt="">
+    </DIV>
+  </section>
+   <main>
+    <div  class="main">
+        <div id="about"  class="intro">
+            <h1>About Me</h1>
+            <p class="color">Introduction</p>
+        </div>
+        <div class="content">
+            <div class="photo"> <img src="images/one.jpg" alt=""></div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod similique, nihil minus officiis veritatis accusantium perferendis? Assumenda possimus non optio deserunt praesentium modi fugit! Iusto aperiam adipisci earum quidem molestiae iste! Minus sint quis iste illo nostrum architecto ab fugiat adipisci dicta nisi.</p>
+           
+              <div class="information">
+                <div class="info"> <i class="fa-solid fa-user"></i><span id="list">Ana steel</span></div>
+                <div class="info"> <i class="fa-solid fa-phone"></i><span id="list">+6478935748</span></div>
+                <div class="info"> <i class="fa-solid fa-message"></i><span id="list">Anasteel@gamil.com</span></div>
+                <div class="info"> <i class="fa-brands fa-github"></i><span id="list">Anasteel.in</span></div></div>
+               
+            </div>
+        </div>
+    </div>
+   </main> 
+</div>
+<section class="section">
+    <div id="skill" class="intro">
+        <h1>Skills</h1>
+        <p class="color">My Skills</p>
+    </div>
+    <div id="up" class="skilll">
+        <div class="skillleft">
+            <div class="percentage"> 
+                <h3>HTML</h3>
+                <span>95%</span>
+                <div class="basebar"></div>
+                <div  id="html" class="basebar"></div>
+            </div>
+            <div class="percentage">
+                <h3>CCC</h3>
+                <span>88%</span>
+                <div class="basebar"></div>
+                <div id="css" class="basebar"></div>
+            </div>
+            <div class="percentage">
+                <h3>JS</h3>
+                <span>89%</span>
+                <div class="basebar"></div>
+                <div id="js" class="basebar"></div>
+            </div>
+            <div class="percentage">
+                <h3>REACT</h3>
+                <span>85%</span>
+                <div class="basebar"></div>
+                <div id="react" class="basebar"></div>
+            </div>
+        </div>
+        <div class="skillright">
+            <img src="images/six.jpg" alt="">
+        </div>
+           
+    </div>
+    <div id="contact" class="contact">
+        <div class="intro">
+            <h1>Contact</h1>
+            <p class="color">My Contact</p>
+        </div>
+        <div class="contacticons">
+            <div class="contacticonss"><a href="https://www.google.com/search?q=github&rlz=1C1CHBF_enIN1012IN1012&oq=githu&gs_lcrp=EgZjaHJvbWUqEAgAEAAYgwEY4wIYsQMYgAQyEAgAEAAYgwEY4wIYsQMYgAQyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDQgCEAAYgwEYsQMYgAQyBggDEEUYOTIGCAQQBRhAMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTcwOWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="contacticonss"><a href=""><i class="fa-brands fa-github"></i></a></div>
+            <div class="contacticonss"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="contacticonss"><a href="https://wa.me/9344807468" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+            <div class="contacticonss"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="contacticonss"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+          
+        </div>
+    </div>
+
+</section>
+<footer>
+    <div class="conclusion">
+<p> © my protfolio design 2023,All rights Reserved © Ana Steel
+</p>
+    </div>
+    <div title="Go to top" id="arrow"><a href="#up"><i class="fa-solid fa-arrow-up fa-lg"></i></a></div>
+</footer>
+</body>
+</html>

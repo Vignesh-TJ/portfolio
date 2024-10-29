@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="icon" href="https://em-content.zobj.net/content/2020/04/05/yt.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="youtube-first-page.css">
+  <style>body{
+   margin: 0;
+   background:black;
+   color: white;
+ 
+ }
+ 
+body{
+  margin: 0;
+  background:black;
+  color: white;
+
+}
+
+
+*{
+  font-size: 16px;
+  line-height: 20px;
+}
+  .picturedown{
+      display: flex;
+  }
+  .imgcontent,.picturedown,.pictures:hover{
+      cursor: pointer;
+  }
+  .small{
+      border-radius: 60px;
+      margin: 10px;
+
+  }
+  .big{
+      border-radius: 15px;
+  }
+  .big:hover{
+      border-radius: 0;
+  }
+  .entirepictures{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .pictures{
+      margin: 5px;
+  }
+ 
+  .header{
+      padding: 3px;
+   
+      padding-left: 25px;
+      display: flex;
+      justify-content:space-between;
+    
+  background: #000;
+     position: sticky;
+     top: 0%;
+     
+  }
+  hr{
+      color: #737373;
+      font-size: 1px;
+  }
+
+  span{
+      font-size: 40px;
+  }
+  input{
+      height: 40px;
+      width: 538px;
+      border-radius: 15px 0 0 15px;
+      border: 1px solid grey;
+      background:none;
+    
+      color: white;
+      padding: 10px;
+  }
+  input placeholder{
+      color: white;
+  }
+  .search{
+      color: white;
+      padding-top: 10px;
+  }
+  
+  .aside{
+      background:black;
+      height: 100%;
+      width: 250px;
+      padding: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      border-radius: 0 10px 0 0;
+   display: block;
+   position: fixed;
+  
+  }
+  .asidemain{
+      display: grid;
+      grid-template-columns: 19% 1fr;
+  }
+  .searchbutton{
+      border-radius: 0 15px 15px 0;
+      padding: 8px;
+      background: #737373;
+      border: none;
+      padding-bottom: 11px;
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
+  }
+  ul{
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      line-height: 10%;
+      display: block;
+      line-height: 20px;
+  }
+  li{
+      padding: 10px;
+      border-radius: 10px;
+     
+  }
+  li:hover{
+      background-color:rgb(198, 192, 192);
+  display: inline;
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+  }
+  .asideinside{
+
+display: inline;
+margin: 35px;
+  }
+@media  screen and (max-width:600px) {
+.aside{
+  display: none;
+  padding: 10px;
+ 
+}
+.asideinside{
+  display: none;
+}
+.entirepictures{
+  margin: 0%;
+  padding: 0%;
+}
+
+}
+.createbutton{
+color: white;
+background-color: #737373;
+border-radius: 20px;
+padding: 9px;
+margin-right: 15px;
+border: none;
+
+}
+.createbutton:hover{
+cursor: pointer;
+background:rgb(199, 188, 188);
+transition: 0.5s;
+}
+.options{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.fa-bell
+{
+color: aliceblue;
+font-size: 20px;
+margin-left: 30px;
+margin-left: 10px;
+}
+.one{
+background-color: rgb(21, 21, 21);
+border-radius: 10px;
+font-size: 17px;
+
+
+}
+hr{
+height: 0.2px;
+opacity: 0.2;
+}
+.ak{
+font-size: 15px;
+}
+.int{
+justify-content: space-between;
+}
+.fa-microphone
+{
+margin-left: 5px;font-size: 20px;
+}
+.fa-list-ul{
+display: flex;
+justify-content: center;
+}
+.subone{
+margin: 10px;
+}
+ 
+ 
+ *{
+   font-size: 16px;
+   line-height: 20px;
+ }
+   .picturedown{
+       display: flex;
+   }
+   .imgcontent,.picturedown,.pictures:hover{
+       cursor: pointer;
+   }
+   .small{
+       border-radius: 60px;
+       margin: 10px;
+ 
+   }
+   .big{
+       border-radius: 15px;
+   }
+   .big:hover{
+       border-radius: 0;
+   }
+   .entirepictures{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .pictures{
+       margin: 5px;
+   }
+  
+   .header{
+       padding: 3px;
+    
+       padding-left: 25px;
+       display: flex;
+       justify-content:space-between;
+     
+   background: #000;
+      position: sticky;
+      top: 0%;
+      
+   }
+   hr{
+       color: #737373;
+       font-size: 1px;
+   }
+ 
+   span{
+       font-size: 40px;
+   }
+   input{
+       height: 40px;
+       width: 538px;
+       border-radius: 15px 0 0 15px;
+       border: 1px solid grey;
+       background:none;
+     
+       color: white;
+       padding: 10px;
+   }
+   input placeholder{
+       color: white;
+   }
+   .search{
+       color: white;
+       padding-top: 10px;
+   }
+   
+   .aside{
+       background:black;
+       height: 100%;
+       width: 250px;
+       padding: 20px;
+       padding-left: 0;
+       padding-right: 0;
+       border-radius: 0 10px 0 0;
+    display: block;
+    position: fixed;
+   
+   }
+   .asidemain{
+       display: grid;
+       grid-template-columns: 19% 1fr;
+   }
+   .searchbutton{
+       border-radius: 0 15px 15px 0;
+       padding: 8px;
+       background: #737373;
+       border: none;
+       padding-bottom: 11px;
+       padding-top: 10px;
+       padding-right: 20px;
+       padding-left: 20px;
+   }
+   ul{
+       display: flex;
+       justify-content: center;
+       list-style-type: none;
+       line-height: 10%;
+       display: block;
+       line-height: 20px;
+   }
+   li{
+       padding: 10px;
+       border-radius: 10px;
+      
+   }
+   li:hover{
+       background-color:rgb(198, 192, 192);
+   display: inline;
+   border-radius: 10px;
+   transition: 1s;
+   cursor: pointer;
+   }
+   .asideinside{
+ 
+ display: inline;
+ margin: 35px;
+   }
+ @media  screen and (max-width:600px) {
+ .aside{
+   display: none;
+   padding: 10px;
+  
+ }
+ .asideinside{
+   display: none;
+ }
+ .entirepictures{
+   margin: 0%;
+   padding: 0%;
+ }
+ 
+ }
+ .createbutton{
+ color: white;
+ background-color: #737373;
+ border-radius: 20px;
+ padding: 9px;
+ margin-right: 15px;
+ border: none;
+ 
+ }
+ .createbutton:hover{
+ cursor: pointer;
+ background:rgb(199, 188, 188);
+ transition: 0.5s;
+ }
+ .options{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ }
+ .fa-bell
+ {
+ color: aliceblue;
+ font-size: 20px;
+ margin-left: 30px;
+ margin-left: 10px;
+ }
+ .one{
+ background-color: rgb(21, 21, 21);
+ border-radius: 10px;
+ font-size: 17px;
+ 
+ 
+ }
+ hr{
+ height: 0.2px;
+ opacity: 0.2;
+ }
+ .ak{
+ font-size: 15px;
+ }
+ .int{
+ justify-content: space-between;
+ }
+ .fa-microphone
+ {
+ margin-left: 5px;font-size: 20px;
+ }
+ .fa-list-ul{
+ display: flex;
+ justify-content: center;
+ }
+ .subone{
+ margin: 10px;
+ }</style>
+</head>
+<body>
+<header class="header">
+    <div class="logo"><img style="margin-left:20px ;" src="https://cdn.icon-icons.com/icons2/2699/PNG/96/youtube_logo_icon_167938.png" alt="" height="70" width="100"> </div>
+    <div class="search"><input type="search" placeholder="search"><button class="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></button> <i class="fa-solid fa-microphone"></i>
+    </div>
+    <div class="options"><button class="createbutton">+ crearte</button> <i class="fa-solid fa-bell"></i><img class="small" src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"  height="36px" width="36px" alt="" ></div>
+</header>
+
+<div class="asidemain"><aside>
+    <div class="aside" >
+       <div class="asideinside">
+        <div class="sideone"><ul>
+            <li class="ak"><i class="fa-solid fa-house" style="margin-right: 10px;"></i>Home</li>
+            <li class="ak"><i class="fa-solid fa-cloud-bolt" style="margin-right: 10px;"></i>Shorts</li>
+            <li class="ak"><i class="fa-solid fa-book" style="margin-right: 10px;"></i>subscribe</li>
+            
+       
+        </ul></div>
+        <hr>
+        <div class="sidetwo"><ul>
+            <li class="ak">you</li>
+            <li class="ak"><i class="fa-solid fa-clock-rotate-left" style="margin-right: 10px;"></i>  history</li>
+            <li class="ak"><i class="fa-regular fa-file" style="margin-right: 10px;"></i>  playlist</li>
+            <li class="ak"><i class="fa-brands fa-youtube" style="margin-right: 10px;"></i>your videos</li>
+            <li class="ak"><i class="fa-solid fa-clock" style="margin-right: 10px;"></i>  watch later</li>
+            <li class="ak"><i class="fa-solid fa-thumbs-up" style="margin-right: 10px;"></i>  liked videos</li>
+        </ul></div>
+        <hr >
+       <div class="sidethree"><ul>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://th.bing.com/th/id/R.e2bb45fff1e398723c711c519502d5a3?rik=SEPvooeqfgw0kA&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1535713875002-d1d0cf377fde%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxzZWFyY2h8NHx8bWFsZSUyMHByb2ZpbGV8fDB8fHx8MTYyNTY2NzI4OQ%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=Gww3MHYoEwaudln4mR6ssDjrAMbAvyoXYMsyKg5p0Ac%3d&risl=&pid=ImgRaw&r=0"  height="36px" width="36px" alt=""><li class="ak">subscriptions</li></div>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg"  height="36px" width="36px" alt=""><li class="ak">gaming killadis</li></div>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://sm.askmen.com/t/askmen_in/article/f/facebook-p/facebook-profile-picture-affects-chances-of-gettin_fr3n.1200.jpg"  height="36px" width="36px" alt=""><li class="ak">fit for fit</li></div>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&format=jpg&width=944"  height="36px" width="36px" alt=""><li class="ak">mallu vlogs</li></div>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG-0Pc_dX0swJiOnUTf58QaSAwwUTpBUi6Q&s"  height="36px" width="36px" alt=""><li class="ak">vikithug</li></div>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG-0Pc_dX0swJiOnUTf58QaSAwwUTpBUi6Q&s"  height="36px" width="36px" alt=""><li class="ak">mfor techy</li></div>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"  height="36px" width="36px" alt=""><li class="ak">mfor techy</li></div>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://th.bing.com/th/id/OIP.jryuUgIHWL-1FVD2ww8oWgHaHa?rs=1&pid=ImgDetMain"  height="36px" width="36px" alt=""><li class="ak">whitefox gamings</li></div>
+        <div class="subone" style="display: flex; "> <img style="border-radius: 60px;" src="https://th.bing.com/th/id/OIP.audMX4ZGbvT2_GJTx2c4GgHaHw?w=210&h=219&c=7&r=0&o=5&pid=1.7"  height="36px" width="36px" alt=""><li class="ak">sayip o</li></div>
+       
+        
+    </ul></div> 
+          </div>
+     
+    </div>
+</aside>   
+    <main> 
+        <div class="navbar" >
+            <ul class="int"  style="padding:0%;list-style-type: none;display: flex; justify-content: space-between;" >
+                <li style="background:white;color:#000;font-weight: 5px;">All</li>
+               <li class="one">Home</li>
+               <li class="one">application</li>
+               <li class="one">gamming</li>
+               <li class="one" >motivation</li>
+               <li class="one">discipline</li>
+               <li class="one">matrix</li>
+               <li class="one">excel</li>
+               <li class="one">gamming</li>
+               <li class="one"> javascript</li>
+               <li class="one">meditaion</li>
+               <li class="one">live music</li>
+               <li class="one">dreams</li>
+            </ul>
+        </div><div class="entirepictures">
+        <div class="pictures"><img class="big" src="https://i.ytimg.com/vi/Mzy-AvRoPI8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD-u_Kn_tA295rguFZsnop0LRcCGQ" alt="" width="362.48px" height="221.05px">
+            <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/R.e2bb45fff1e398723c711c519502d5a3?rik=SEPvooeqfgw0kA&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1535713875002-d1d0cf377fde%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxzZWFyY2h8NHx8bWFsZSUyMHByb2ZpbGV8fDB8fHx8MTYyNTY2NzI4OQ%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=Gww3MHYoEwaudln4mR6ssDjrAMbAvyoXYMsyKg5p0Ac%3d&risl=&pid=ImgRaw&r=0"  height="36px" width="36px" alt="" ></div>
+            <div class="imgcontent"><p>HTML & CSS Full Course-Beginer to Pro <br>superSimpleDev✔️ <br>11M views <sup>.</sup> 2 years ago</p></div></div>
+    
+        
+             </div>
+             <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/4McYCjqXSkA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC2KLzGDg_ADwA3HeNGoaE0VLS4Sg" alt="" width="362.48px" height="221.05px">
+                <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+    
+            
+                 </div>
+                 <div class="pictures">  <img class="big" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dG1nQY3sIHPhyqHMqc38djwTWAv6MUBfHA&s" alt="" width="362.48px" height="221.05px">
+                    <div class="picturedown">        <div class="smallimg"><img class="small" src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"  height="36px" width="36px" alt="" ></div>
+                    <div class="imgcontent"><p>Javascript programing in tamil <br>codebinex✔️ <br>9M views <sup>.</sup> 2 years ago</p></div></div>
+            
+                
+                     </div><div class="pictures"><img class="big" src="https://i.ytimg.com/vi/yit2SRb7k-A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAfown7w8hYbwCMQY9Hg4g94fHlOg" alt="" width="362.48px" height="221.05px">
+                        <div class="picturedown">        <div class="smallimg"><img class="small" src="https://i.ytimg.com/vi/xyVfLxV08I0/maxresdefault.jpg"  height="36px" width="36px" alt="" ></div>
+                        <div class="imgcontent"><p><b>Path to discipline Path to dream</b> <br><br>DreamersWorld✔️ <br>7M views <sup>.</sup> 9 years ago</p></div></div>
+                
+                    
+                         </div>
+                         <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/NmznansFIPQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCH4J5_fp5UPvfp97Srw6LqNNRqRw" alt="" width="362.48px" height="221.05px">
+                            <div class="picturedown">        <div class="smallimg"><img class="small" src="https://designshack.net/wp-content/uploads/Free-YouTube-Thumbnail-Templates-for-Gamers-1024x656.jpg"  height="36px" width="36px" alt="" ></div>
+                            <div class="imgcontent"><p>Full stack web develpment complete course <br>Devops✔️ <br>200K views <sup>.</sup> 2 years ago</p></div></div>
+                    
+                        
+                             </div>
+                             <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/tgBTspqA5nY/hq720_live.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAl45klyTPYDWtaY4DP8M8kn9TMJg" alt="" width="362.48px" height="221.05px">
+                                <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.-LQP_3LKIUquZ-mMdhMm8wHaEK?rs=1&pid=ImgDetMain"  height="36px" width="36px" alt="" ></div>
+                                <div class="imgcontent"><p>How to make the dream quite aloud<br>superSimpleDev✔️ <br>100M views <sup>.</sup> 9 years ago</p></div></div>
+                        
+                            
+                                 </div>
+                                 <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/55pzldrBRJM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBT8u3vSmy-wdvyfbcq4Rwadkbmaw" alt="" width="362.48px" height="221.05px">
+                                    <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                    <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                        
+                                
+                                     </div>
+                                     <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/349z-tk5RUM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBBifqC6S8HRfm3kwtDF8n62_7TJA" alt="" width="362.48px" height="221.05px">
+                                        <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                        <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                            
+                                    
+                                         </div>
+                                         <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/eiGdsH1g20k/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDhgfWEKvNbYEqjvc_PiL3yLNQPwA" alt="" width="362.48px" height="221.05px">
+                                            <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                            <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                
+                                        
+                                             </div>
+                                             <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/HGOiuQUwqEw/hq720_live.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBosA5g1QnbfQHG35e9DnWiS-3PNQ" alt="" width="362.48px" height="221.05px">
+                                                <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                    
+                                            
+                                                 </div>
+                                                 <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/Ke3Tx5iUOTw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDAQsh4M30QoVshY3EpLA3oog8XrA" alt="" width="362.48px" height="221.05px">
+                                                    <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                    <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                        
+                                                
+                                                     </div>
+                                                     <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/i5fuKFn150s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAXbT_yWyN1_2qK1rrq37_5WDe-wg" alt="" width="362.48px" height="221.05px">
+                                                        <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                        <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                            
+                                                    
+                                                         </div>
+                                                         <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/PEnQJKkaDPo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA6c8LcbWGuL-m_tGd-HJ_GMiZxhQ" alt="" width="362.48px" height="221.05px">
+                                                            <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                            <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                                
+                                                        
+                                                             </div>
+                                                             <div class="pictures">  <img class="big" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4TG1Wh0kdtojOHdkA0EAHeapGH5Gk8MW-A&s" alt="" width="362.48px" height="221.05px">
+                                                                <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                                <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                                    
+                                                            
+                                                                 </div>
+
+                                                                 <div class="pictures">  <img class="big" src="https://images.filmibeat.com/img/1200x675/popcorn/movie_lists/top-five-malayalam-thriller-movies-available-on-youtube-20240711182428-3592.jpg" alt="" width="362.48px" height="221.05px">
+                                                                    <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                                    <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                                        
+                                                                
+                                                                     </div>
+                                                                     <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/JGn13tvLmcc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLASW2b_C2ze7pjUXckyS8C4D8zJFw" height="221.05px">
+                                                                        <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                                        <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                                            
+                                                                    
+                                                                         </div>
+                                                                         <div class="pictures">  <img class="big" src="https://media.gqindia.com/wp-content/uploads/2021/07/Solo-Malayalam-movie-1920x1080.jpeg" alt="" width="362.48px" height="221.05px">
+                                                                            <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                                            <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                                                
+                                                                        
+                                                                             </div>
+                                                                             <div class="pictures">  <img class="big" src="https://i.ytimg.com/vi/a1Dttgz2a4g/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCfTiUTIwT9wZhisaLub9ujGFyO7Q" alt="" width="362.48px" height="221.05px">
+                                                                                <div class="picturedown">        <div class="smallimg"><img class="small" src="https://th.bing.com/th/id/OIP.2jZuw1ZCOh6NVHdGNNKV1AHaEU?pid=ImgDet&w=474&h=276&rs=1"  height="36px" width="36px" alt="" ></div>
+                                                                                <div class="imgcontent"><p>How to be effective on social media <br>EscapingTheOrdinary✔️ <br>1M views <sup>.</sup> 1 years ago</p></div></div>
+                                                                    
+                                                                            
+                                                                                 </div>
+             </div>
+                                                                             
+    </div>
+    
+    </main></div> 
+
+    
+  
+    
+</body>
+</html>

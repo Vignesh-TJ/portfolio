@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAZON</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>*{
+        margin: 0;
+        font-family: arial;
+        border: border-box;
+    }
+    body{
+        position: relative;
+        z-index: 1;
+    }
+    .navbar{
+        height: 60px;
+        background: #0f1111;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+    
+    .logo{
+        background-image: url("pngimg.com\ -\ amazon_PNG25.png");
+        background-size: cover;
+        height: 50px;
+        width: 130px;
+    }
+    .navlogo{
+        height: 50px;
+        width: 130px;
+    }
+    .border{
+        border: 1.5px solid transparent;
+    }
+    .border:hover{
+        border: 1.5px solid white;
+    }
+    /* box two */
+    .addressfirst{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+    }
+    .addresssecond{
+      color: white;
+    
+    }
+    .addicon{
+        display: flex;
+        align-items: center;
+    }
+    /* box three */
+    .navsearch{
+        background-color: pink;
+        display: flex;
+        width: 650px;
+        height: 40px;
+        border-radius: 4px;
+        justify-content: space-evenly;
+    }
+    .searchselect{
+        background-color: #f3f3f3;
+        width: 45px;
+        text-align: center;
+        border-radius: 4px 0 0 4px;
+        border: none;
+        
+    
+    }
+    .searchinput{
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+    }
+    .searchicon{
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: orange;
+        border-radius: 0 5px 5px 0;
+        color: #0f1111;
+    }
+    /* box four */
+    span{
+        font-size: 0.7rem;
+    
+    }
+    .navsecond{
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+    .navsearch:hover{
+        border: 2px solid orange;
+    }
+    /* box six */
+    .navcard>i{
+    font-size: 30px;
+    }
+    .navcar{
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+    /* pannnnnnnnnnnnnelssssssssssssssss */
+    .panel{
+        height: 40px;
+        background-color: #222f3d;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .paneloptions p{
+        display: inline;
+        margin-left: 15px;
+    }
+    .paneloptions{
+        width: 70%;
+        font-size: 0.85rem;
+       
+    
+    }
+    .paneldeas{
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    /* section....................... */
+    .herosection{
+        height: 350px;
+       
+        background-size: cover;
+        padding: 20px;
+      
+    
+        background-image: url("https://m.media-amazon.com/images/I/71C-ztbXMCL._SX3000_.jpg");
+    }
+    .heromsg{
+        background-color: rgb(240, 233, 233);
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        margin-top: 15%;
+    }
+    .heromsg p a{
+        color: #007185;
+        text-decoration: none;
+    }
+    /* shopping section */
+    .shopsection{
+       
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+      position: relative;
+      bottom: 60px;
+     
+        
+    }
+    .box{
+     
+       text-align: center;
+        background: white;
+        padding: 20px;
+        
+    }
+    body{
+        background:rgb(209, 206, 206);
+    }
+    .boximg{
+        width: 250px;
+        height: 300px;
+        margin: 20px  0 20px 20px;
+      
+       background-position: center;
+       padding: none;
+    }
+    .box p{
+        color: green;
+    }
+    /* foooter */
+    .footpanel1{
+        background-color: #37475a;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.85rem;
+        color: white;
+    }
+    .footpanel2{
+        display: flex;
+        justify-content: space-around;
+        background-color: #1f2832;
+        color: rgb(237, 231, 231);
+        padding: 20px;
+        font-size: 0.85rem;
+    }
+    .footpanel2 .lis{
+        margin-top: 50px;
+        
+    }
+    .lis ul{
+        list-style-type: none;
+        line-height: 30px;
+    }
+    .lis ul li:first-child{
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .footpanel3{
+        height: 80px;
+        background-color: #1f2832;
+        border-top: .5px solid rgb(168, 167, 167);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .four{
+        height: 30px;
+        width: 150px;
+        border: .3px solid rgb(149, 146, 146);
+        margin-left: 30px;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 5px;
+        font-size: .9rem;
+    }
+    .four i{
+        margin-right: 10px;
+    }
+    /* pannnel fourrrrrrrrrr */
+    .footpanel4{
+        display: grid;
+        grid-template-columns: repeat(6,1fr)  ;
+        padding: 50px 200px;
+         background:#131a22;
+    }
+    .footpanel4 ul li{
+        font-size: .7rem;
+        color: rgb(215, 208, 208);
+      
+    
+    }
+    .footpanel4 ul{
+        line-height: 20px;
+    }
+    .footpanel4 ul li:first-child{
+        font-size: 1rem;
+        margin: 0;
+    }
+    /* PANELLLLL FIVE */
+    .footpanel5{
+        text-align: center;
+        background:#131a22;
+        color: white;
+        font-size: .8rem;
+        padding: 30px;
+    }
+    .footpanel5 ul li{
+        display: inline-block;
+        color: white;
+        margin-right: 10px;
+    }
+    .footpanel5 ul{
+      padding-bottom: 5px;
+    }
+    .overlay{
+        background-color: #0f1111;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 70px;
+        bottom: 0%;
+        opacity: 0.5;
+        z-index: 2;
+        display: none;
+        transition-delay: 2s;
+    }
+    .upperlay{
+        position: absolute;
+        top: 70px;
+        right: 300px;
+       
+        height: 600px;
+        width: 400px;
+        border: 2px solid black;
+        z-index: 3;
+        background-color: white;
+        border-radius: 20px;
+        display: none;
+    
+    }
+    #on{
+        transition-duration: 5s;
+    }
+    .click{
+        padding: 100px;
+        padding-bottom: 500px;
+        position: absolute;
+        top: 120px;
+        background: #000;
+        color: white;
+        display: none;
+    }
+   
+    </style>
+</head>
+<body>
+    <header id="top">
+        <div class="navbar">
+            <div class="navlogo border">
+                <div class="logo">
+                </div>
+            </div>
+            <!-- address -->
+             <div class="navaddress border">
+                <p class="addressfirst">Deliver</p>
+                <div class="addicon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="addresssecond">India</p>
+                </div>
+             </div>
+             <!-- search -->
+              <div class="navsearch">
+                <select class="searchselect" name="" id="">
+                    <option value="">all</option>
+                </select>
+                <input class="searchinput" type="text" placeholder="searchamazon">
+                <div class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></div>
+              </div>
+              <!-- sign in -->
+            <div onmouseover="show()" onmouseleave="clos()" id="on" class="navsignin border">
+                <p><span>Hello, Sign in</span></p>
+                <p class="navsecond">Account & Lists</p>
+            </div>
+            <!-- four -->
+            <div class="navreturn border">
+                <p><span>Returns</span></p>
+                <p class="navsecond"> & Orders</p>
+            </div>
+            <!-- carticon -->
+             <div class="navcard border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                cart 
+
+             </div>
+        </div>
+
+
+    <div class="panel">
+        <div class="panelall border"><i class="fa-solid fa-bars"></i>
+          All 
+        </div>
+        <div class="paneloptions">
+            <p onclick="pai()" class="border">Todays Deals</p>
+            <p class="border">Customer Service</p>
+            <p class="border">Registry</p>
+            <p class="border">Gift Cards</p>
+            <p class="border">Sell</p>
+        </div>
+        <div class="paneldeas border">
+            shop deals in Electronics
+        </div>
+    </div>
+
+    </header>   
+<!-- mid -->
+<section>
+    <div class="herosection">
+        <div class="heromsg">
+            <p>you are on amazon.you can also shop on amazon india for million of products with fast local delivery. <a href="">Click here to go to amazon.in</a></p>
+        </div>
+
+    </div>
+</section>
+<!-- boxesssssssss -->
+ <main>
+    <div class="shopsection">
+        <div class="box1 box">
+            <h2>Deals in PC</h2>
+            <div class="boximg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg');">
+              
+            </div>
+            <p>See More</p>
+        </div>
+        <div class="box1 box">
+            <h2>Toys Under $25</h2>
+            <div class="boximg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg');">
+              
+            </div>
+            <p>shop Now</p>
+        </div>
+        <div class="box1 box">
+            <h2>Cloths Under $30</h2>
+            <div class="boximg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v5._SY304_CB573698005_.jpg');">
+              
+            </div>
+            <p>Shop Now</p>
+        </div>
+        <div class="box1 box">
+            <h2>School Supplies</h2>
+            <div class="boximg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BTS24/Fuji_BTS_Dash_card_1x._SY304_CB583656338_.jpg');">
+              
+            </div>
+            <p>See More</p>
+        </div>
+        <div class="box1 box">
+            <h2>Deals in PC</h2>
+            <div class="boximg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg');">
+              
+            </div>
+            <p>See More</p>
+        </div>
+        <div class="box1 box">
+            <h2>Toys Under $25</h2>
+            <div class="boximg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg');">
+              
+            </div>
+            <p>shop Now</p>
+        </div>
+        <div class="box1 box">
+            <h2>Cloths Under $30</h2>
+            <div class="boximg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v5._SY304_CB573698005_.jpg');">
+              
+            </div>
+            <p>Shop Now</p>
+        </div>
+        <div class="box1 box">
+            <h2>School Supplies</h2>
+            <div class="boximg" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BTS24/Fuji_BTS_Dash_card_1x._SY304_CB583656338_.jpg');">
+              
+            </div>
+            <p>See More</p>
+        </div>
+
+    </div>
+ </main>
+ <!-- fooooaterrrrrrrrrrrrrr -->
+<footer>
+    <div class="footpanel1">
+       <a style="text-decoration: none;color: white;transition: 5s;" href="#top"> Back to Top</a>
+    </div>
+    <div class="footpanel2">
+        <div class="lis">
+            <ul>
+                <li>Get to Know Us</li>
+                <li>Carrers</li>
+                <li>Blog</li>
+                <li>About Us</li>
+                <li>Investors Relation</li>
+                <li>Amazon Devices</li>
+                <li>Amazon Services</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+                <li>Make Money with us </li>
+                <li>Self products on amazon</li>
+                <li>Sell on amazon business</li>
+                 <li>Become a affliate</li>
+                 <li>Advertise your products</li>
+                 <li>Self-publish with us</li>
+                 <li>Host on amazon hub</li>
+                 <li>See more make money</li>
+                 
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+         <li>Amazon Payment products</li>
+         <li>Amazon business Cards</li>
+         <li>Shop with points</li>
+         <li>Relod your balance</li>
+         <li>Amazon Currency converter</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+        <li>Let Us Help you</li>
+        <li>Amazon &covid</li>
+        <li>Your Account</li>
+        <li>Your Orders</li>
+        <li>Shipping Rates
+        </li>
+        <li>Returns &</li>
+        <li>Manage Your</li>
+        <li>Amazon Assistent</li>
+        <li>Help</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footpanel3">
+      <div class="footimg">
+        <img src="pngimg.com - amazon_PNG25.png" width="90px" height="30px" alt="">
+      </div>
+      <div class="one four ">
+        <i class="fa-solid fa-earth-americas"></i>
+        English
+      </div>
+       <div class="tow four">
+        <i class="fa-solid fa-dollar-sign"></i>
+        USD-U.S.Dollar
+       </div>
+       <div class="three four">
+        <img src="./—Pngtree—cartoons american flag_4283200.png" width="25px"  alt="">
+        United States
+       </div>      
+    </div>
+    <div class="footpanel4">
+        <div class="lis">
+            <ul>
+         <li>Amazon music</li>
+         <li>Stream millions</li>
+         <li>of songs</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+               <li>Amazon
+               </li>
+               <li>Advertising</li>
+               <li>find attract,</li>
+               <li>aand</li>
+               <li>engage</li>
+               <li>customers</li>
+                 
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+        <li>Gpm</li>
+        <li>score</li>
+        <li>on fashion</li>
+        <li>brands</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+    <li>Abe Books</li>
+    <li>books,arts></li>
+    <li>culutre</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+             <li>ACK</li>
+             <li>audio books</li>
+             <li>publishing</li>
+             <li>made easy</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+               <li>Sell on amazon</li>
+               <li>start a selling</li>
+               <li>account</li>
+                 
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+               <li>Availability</li>
+               <li>local</li>
+               <li>national</li>
+               <li>international</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+        <li>Audio Books</li>
+        <li>book</li>
+        <li>and</li>
+        <li>music</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+             <li>web service</li>
+             <li>hostiong</li>
+             <li>servesw</li>
+             <li>mainpulation</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+                <li>Tree</li>
+                <li>branch</li>
+                <li>shopping</li>
+                <li>cart</li>
+                <li>sell</li>
+                 
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+            <li>Flipkart</li>
+            <li>amazon</li>
+            <li>Mesho</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+        <li>Countries</li>
+        <li>india</li>
+        <li>pakisthan</li>
+        <li>american</li>
+        <li>antartica</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+                <li>delivery</li>
+                <li>fast</li>
+                <li>quick</li>
+                <li>next minute</li>
+            </ul>
+        </div>
+        <div class="lis">
+            <ul>
+               <li>products</li>
+               <li>clothes</li>
+               <li>acessories</li>
+               <li>gadgets</li>
+               <li>Electronics</li>
+               <li>home applainces</li>
+                 
+            </ul>
+        </div>
+       
+
+    </div>
+    <div class="footpanel5">
+        <ul>
+            <li>Contions to use</li>
+            <li>privacy concens</li>
+            <li>customer health data disclosure</li>
+            <li>Your Ads Privacy Choices []
+            </li>
+        </ul>
+        <p> &#169; 2000-2002,amazon.in,icl or its affliates</p>
+       
+    </div>
+</footer>
+<div id="upperlay" class="upperlay"></div>
+<div id="overlay" class="overlay"></div></div>
+
+<script>
+    var upperlay=document.getElementById('upperlay'
+    )
+    var overalay=document.getElementById('overlay')
+    var on=document.getElementById('on')
+    function show(){
+        upperlay.style.transitionDelay='2s'
+        overlay.style.transitionDelay='2s'
+        upperlay.style.display='block';
+        overlay.style.display='block';
+    }
+    function clos(){
+        upperlay.style.display='none';
+        overlay.style.display='none';
+    }
+    var pain=document.getElementById('pain')
+    function pai(){
+        pain.style.display='block'
+    }
+
+
+
+</script>
+</body>
+</html>
